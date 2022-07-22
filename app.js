@@ -66,6 +66,23 @@ function zeroStep() {
 		cells[8].innerHTML = 'o';
 		return;
 	}
+	
+	if (
+		cells[0].classList.contains('o') &&
+		cells[1].classList.contains('empty') &&
+		cells[2].classList.contains('x') &&
+		cells[3].classList.contains('empty') &&
+		cells[4].classList.contains('o') &&
+		cells[5].classList.contains('x') &&
+		cells[6].classList.contains('x') &&
+		cells[7].classList.contains('empty') &&
+		cells[8].classList.contains('empty')
+	) {
+		cells[8].classList.remove('empty');
+		cells[8].classList.add('o');
+		cells[8].innerHTML = 'o';
+		return;
+	}
 
 	if (
 		cells[1].classList.contains('empty') &&
