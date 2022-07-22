@@ -15,7 +15,6 @@ for (const cell of cells) {
 }
 
 const restart = document.querySelector('.restart');
-console.log(restart);
 restart.addEventListener('click', () => {
 	const arr = [...cells];
 	arr.forEach((cell) => {
